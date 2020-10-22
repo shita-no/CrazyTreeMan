@@ -17,9 +17,9 @@ export default class tree{
 	renderTree(i){
 		let that = this
 		that.treePosition(i)
-		//that.img.onload = function(){	
+	//	that.img.onload = function(){	
 			that.ctx.drawImage(that.img,that.x,that.y,207,60)
-		//}
+	//	}
 	}
 
 	treePosition(i){
@@ -39,6 +39,6 @@ export default class tree{
 		}else{
 			this.x = this.x - 16
 		}
-		this.ctx.drawImage(this.img,this.x,this.y,210,60)
+		this.ctx.drawImage(this.img,this.x,this.y,207,60)
 	}
 }

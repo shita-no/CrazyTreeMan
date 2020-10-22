@@ -43,7 +43,7 @@ export default class npc{
 		this.blood = this.blood - 10
 		this.ctx.fillStyle = "#222"
 		this.ctx.fillRect(screenWidth/2-95,30,190,30)
-		this.ctx.fillStyle = "red"
+		this.ctx.fillStyle = "blue"
 		this.ctx.fillRect(screenWidth/2-90,35,180*(this.blood/6000),20)
 	}
 }

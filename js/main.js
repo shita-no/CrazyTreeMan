@@ -29,7 +29,7 @@ export default class main{
 		canvas.removeEventListener('touchstart',this.touchHandler)
 		wx.triggerGC()
 		/*降低帧率*/
-		//wx.setPreferredFramesPerSecond(20)
+	//	wx.setPreferredFramesPerSecond(20)
 		this.back = new Back(ctx)	
 		this.npc = new Npc(ctx)		
 		this.gameinfo = new Gameinfo(ctx)
@@ -61,7 +61,7 @@ export default class main{
 		}		
 
 		databus.score++
-		this.npc.blood = (this.npc.blood + 160>=6000)?6000:this.npc.blood+160
+		this.npc.blood = (this.npc.blood + 80>=6000)?6000:this.npc.blood+80
 		/*木头池*/
 		databus.shiftTree() //弹出		
 		let _img = this.randomTree()

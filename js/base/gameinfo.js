@@ -9,7 +9,7 @@ export default class gameinfo{
 	render(score){	
 		this.ctx.font = "30px Microsoft YaHei"
 		this.ctx.fillStyle = "#ffffff"	
-  		this.ctx.fillText("得分："+score,  screenWidth / 2 - 50,  100)
+  		this.ctx.fillText("Score："+score,  screenWidth / 2 - 50,  100)
 	}
 
 	gameOver(score){
